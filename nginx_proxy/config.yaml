@@ -17,7 +17,7 @@ map:
   - ssl
   - share
 options:
-  domain: null
+  domain: manoleando.duckdns.org
   hsts: max-age=31536000; includeSubDomains
   certfile: fullchain.pem
   keyfile: privkey.pem
@@ -28,7 +28,7 @@ options:
     servers: nginx_proxy/*.conf
 ports:
   443/tcp: 443
-  80/tcp: null
+  80/tcp: 443
 schema:
   domain: str
   hsts: str
